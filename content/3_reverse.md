@@ -17,6 +17,10 @@ gallery: true
 
 {% include card.html text="Here are some examples of the types of things reverse image searching excels at and some of the things it struggles with:" %}
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 ## Strengths
 
 * **Dramatically distinct patterns in the landscape**, as in this [Swallows Nest Rock](https://www.lib.uidaho.edu/digital/postcards/items/nwpostcards736.html){:target="_blank" rel="noopener"} on Snake River located in Clarkston, Washington. 
@@ -34,6 +38,10 @@ The same image we located through text analysis is also identifiable through rev
 {% include gallery-figure.html img="geo_23.jpg" width="100%" alt="Images of the same bridge and landscape from different angles" caption="(Left) Photograph PG070-18-01 from Unidentified Family Album, 1920-1939, Courtesy U of I Special Collections. (Right) Spalding (Idaho), 1952. Courtesy U of I Special Collections." %}
 
 The pattern of the bridge and geological markings helped identify the now demolished [Spalding Bridge](https://www.lib.uidaho.edu/digital/laughlin/items/spec_kl1209.html){:target="_blank" rel="noopener"} on the Clearwater River east of Lewiston (PG070-18-01) and the festivities indicate this may have taken place during the opening ceremony of the structure in 1923.
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 ## Weaknesses
 

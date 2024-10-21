@@ -6,6 +6,10 @@ gallery: true
 
 **Another challenge in geolocation** is identifying photographs of structures that have since been demolished. Creating a time-lapse using historical aerial photography can help you understand when and where significant features, such as bridges, buildings, and natural areas, were still standing.
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 {% include feature/nav-menu.html sections="Platform Comparison;Google Earth Engine;Output Comparison" %}
 
 ## Platform Comparison
@@ -77,6 +81,12 @@ While there have been aerial photography initiatives active for over 100 years a
     </td>
   </tr>
 </table>
+
+<br>
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 <br>
 
@@ -199,7 +209,11 @@ Ideally, I wanted to create code that would automatically overlay the date infor
 }
 ```
 
-Finally, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you create directly into your Google Drive account. Additionally exported video files can be converted into GIF files and loaded onto project sites like we see below. 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
+**Finally**, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you create directly into your Google Drive account. Additionally exported video files can be converted into GIF files and loaded onto project sites like we see below. 
 
 ## Output Comparison
 

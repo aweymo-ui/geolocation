@@ -16,6 +16,10 @@ For example, here is a map I created of all of the landmarks identified of fast 
 
 {% include gallery-figure.html img="geo_30.jpg" width="100%" alt="Map of Moscow with a coding area to the left and various nodes mostly along the major roads" caption="Overpass Turbo map of Moscow Fast Food locations" %}
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 When geolocating with landmarks, it's essential to consider if you have enough reference points to accurately identify a location. In triangulation you have (you guessed it) three points of reference that you can use to measure angles and distances between landmarks to identify an area. These points of reference can be landmarks or distinctive elements of the skyline. 
 
 {% include gallery-figure.html img="geo_31.jpg" width="100%" alt="Group of people outside at a table eating near tents and automobiles." caption="Photograph PG070-04-03 from Unidentified Family Album, 1920-1939, Courtesy U of I Special Collections." %}
@@ -44,9 +48,13 @@ out skel qt;
 
 While we find that there is a water tower located within an area that would likely have had the power line we see running across the block in the background, there aren’t enough landmarks or clearly visible landforms in the background of the image to orient us in space. 
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 {% include gallery-figure.html img="geo_34.jpg" width="100%" alt="Street scene with a bank, stone monument, street lights and mountain in the background highlighted for reference" caption="First National Bank with Mullan Monument, n.d. Courtesy U of I Special Collections." %}
 
-In contrast, this photograph would be an example of an image that is ideal for triangulation (setting aside the fact that we actually know this is located in [Mullan, Idaho](https://www.lib.uidaho.edu/digital/tabor/items/tabor1552.html){:target="_blank" rel="noopener"}). We have a monument in the road, a series of street lamps, a structure that resembles a 19th century bank and a landform in the background with a fairly distinct shape. 
+**In contrast**, this photograph would be an example of an image that is ideal for triangulation (setting aside the fact that we actually know this is located in [Mullan, Idaho](https://www.lib.uidaho.edu/digital/tabor/items/tabor1552.html){:target="_blank" rel="noopener"}). We have a monument in the road, a series of street lamps, a structure that resembles a 19th century bank and a landform in the background with a fairly distinct shape. 
 
 Using the [OpenStreetMap language](https://wiki.openstreetmap.org/wiki/Map_features){:target="_blank" rel="noopener"} again, we can search for these elements within the state of Idaho:
 
