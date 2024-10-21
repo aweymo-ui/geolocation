@@ -10,7 +10,7 @@ gallery: true
 
 ## Platform Comparison
 
-While there have been aerial photography initiatives active for over 100 years and major digital repositories now contain over 900 collections (referred to as ‘datasets’ in the GIS discipline), compositing this data together to form a comprehensive time lapse of a defined area is surprisingly difficult. Here are a few different freely available resources and their different strengths and weaknesses. 
+While there have been aerial photography initiatives active for over 100 years and major digital repositories now contain over 900 collections (referred to as ‘datasets’ in the GIS discipline), compositing this data together to form a comprehensive time lapse of a defined area is surprisingly difficult. Here are a few different freely available resources and their different strengths and weaknesses.
 
 
 **Beginning with a few bad ones** you don’t want to spend your time on (like I did):
@@ -78,15 +78,15 @@ While there have been aerial photography initiatives active for over 100 years a
   </tr>
 </table>
 
-<div class="symbol-container">
-    <p class="symbol">&#10042;</p>
-</div>
+<br>
 
 ## Google Earth Engine
 
-While I did find the learning curve on this resource to be steep, its adaptability, variety of datasets and convenient export settings make this a good geolocation resource to end on. Like the USGS Earth Explorer, you will need to sign a waiver that you will be using the resource for non-profit reasons, but after signing you should have near immediate access. Once inside, the interface looks a bit like a text editor if you do any coding. On the left pane you have the scripts that you’ve written along with examples of other scripts you can automatically generate to help you learn the programmatic language as well as the Google Earth Engine Docs to drill down on specific functionalities. The center pane is where you will write and run the code. On the right pane your console acts essentially as a terminal where error messages will feed out and also where data will be printed after running a script and the task pane will have a list of the scripts you have run along with their status.
+While I found the learning curve for this resource steep, its adaptability, variety of datasets, and convenient export settings make it an excellent choice for geolocation. Like the USGS Earth Explorer, you'll need to sign a waiver confirming that you'll use the resource for non-profit purposes, but you should gain near-immediate access after signing.
 
-The intention of the code was to create a time lapse over Moscow, ID that would span the greatest amount of time. 
+The interface resembles a text editor familiar to those with coding experience. The left pane displays the scripts you've written, along with examples of other scripts you can automatically generate to aid your learning of the programmatic language. You’ll also find the Google Earth Engine documentation here for specific functionalities. The center pane is where you write and run your code, while the right pane features a console that functions as a terminal, displaying error messages and printing data after script execution. The task pane lists the scripts you've run along with their status.
+
+The intention of the code is to create a time lapse over Moscow, ID, covering the longest possible time span.
 
 ```
 // Define the center of the 83843 area code in Moscow, Idaho
@@ -101,7 +101,7 @@ var collection = ee.ImageCollection('USDA/NAIP/DOQQ')
   .sort('system:time_start');
   ```
 
-  To begin, we are defining our perimeter geographically around the 83843 area code. Next we are going to define the dataset we want to pull from to create this visualization. While Google Earth Engine contains over 900 datasets, for a beginner like me, I was unable to combine datasets to increase the span of time in any given area. I believe this is due to the datasets having slightly different metadata and contrasting color outputs so, for this script, we are only pulling from the National Agriculture Imagery Program dataset, which goes back to about 1980 and in line 13 you can see I am requesting the earliest possible image of this defined area. 
+ To start, we will define our geographic perimeter around the 83843 area code. Next, we will specify the dataset to use for creating this visualization. Although Google Earth Engine offers over 900 datasets, I found it challenging to combine them as a beginner, likely due to differences in metadata and color outputs. Therefore, for this script, we will focus solely on the National Agriculture Imagery Program dataset, which dates back to around 1980. 
 
   ```
 // Get the earliest image
@@ -143,7 +143,7 @@ if (earliestImage) {
     .sort('system:time_start'); // Ensure chronological order
 ```
 
-Moving  to line 28, another complication that I encountered was that not all of the satellite photographs that capture part of the area necessarily cover all of it, so some of the early iterations of this script had little slivers of the terrain that were unhelpful in understanding geographic change over time. To solve this I am asking in code for just the largest image for each year to balance getting the best coverage with the best yield of images. Starting around line 41, we are asking in code to assemble these images chronologically from earliest to most recent and compile them in a video format and export them in red, green and blue color formatting. 
+Moving ahead, I encountered another complication: not all satellite photographs that capture parts of the area offer complete coverage, leaving distracting gaps in some of the earlier iterations of the code. To address this, I adjusted the code to request only the largest image for each year, ensuring optimal coverage and a better yield of images. A little farther down in the script, we are assembling these images chronologically, from earliest to most recent, and compiling them into a video format for export in red, green, and blue (RGB) color formatting. 
 
 ```
  // Function to prepare images for video export and add date metadata
@@ -171,7 +171,7 @@ Moving  to line 28, another complication that I encountered was that not all of 
     print('Error:', error);
   });
 ```
-**In a perfect world** I was hoping to create a code that would automatically overlay the date information of each photograph over its image, so the viewer would have a better frame of reference, but the best I was able to do was have this date information print when the script is run in the console. This information can then be fairly easily added over the frames using video editing software like Adobe Premiere
+Ideally, I wanted to create code that would automatically overlay the date information onto each photograph, providing viewers with a better frame of reference. However, the best I could achieve was to have this metadata "printed" in the console when the script runs. This data can then be easily added to the frames using video editing software like Adobe Premiere.
 ```
   // Define video export parameters with increased display time
   var videoParams = {
@@ -199,7 +199,7 @@ Moving  to line 28, another complication that I encountered was that not all of 
 }
 ```
 
-Finally, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you generate directly into your Drive. The exported video files can be converted into GIF files and loaded onto project sites like we see below. 
+Finally, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you create directly into your Google Drive account. Additionally exported video files can be converted into GIF files and loaded onto project sites like we see below. 
 
 ## Output Comparison
 

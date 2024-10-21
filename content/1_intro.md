@@ -4,7 +4,7 @@ nav: Introduction
 gallery: true
 ---
 
-Hello, my name is Andrew Weymouth and I have worked with the University of Idaho Library as the [Digital Initiatives Librarian](https://www.lib.uidaho.edu/about/people/aweymouth.html) in the [Center for Digital Inquiry and Learning ](https://cdil.lib.uidaho.edu/)(CDIL) department since the fall of 2023. My work generally consists of creating and maintaining our digital collections, working with CDIL fellows, helping to rethink processes and introducing new digital scholarship tools to the department.
+Hello, my name is Andrew Weymouth and I have worked with the University of Idaho Library as the [Digital Initiatives Librarian](https://www.lib.uidaho.edu/about/people/aweymouth.html){:target="_blank" rel="noopener"} in the [Center for Digital Inquiry and Learning ](https://cdil.lib.uidaho.edu/){:target="_blank" rel="noopener"}(CDIL) department since the fall of 2023. My work generally consists of creating and maintaining our digital collections, working with CDIL fellows, helping to rethink processes and introducing new digital scholarship tools to the department.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -22,7 +22,7 @@ One of the only first person resources I was able to find from this community of
     <p class="symbol">&#10042;</p>
 </div>
 
-Though the platform has been in development for almost 20 years, continued improvements in satellite imagery and recent advancements in 3D technology have made even remote areas of Alaska identifiable through [Google Earth](https://earth.google.com/). A note in Caballero's scrapbook mentioning the "Karluk Cannery" allowed me to use a basic geolocation technique: tracing the coastline in Google Earth to match natural landforms. When working with an island or similarly contained area, this process is relatively simple, as coastal rock formations tend to remain consistent over time.
+Though the platform has been in development for almost 20 years, continued improvements in satellite imagery and recent advancements in 3D technology have made even remote areas of Alaska identifiable through [Google Earth](https://earth.google.com/){:target="_blank" rel="noopener"}. A note in Caballero's scrapbook mentioning the "Karluk Cannery" allowed me to use a basic geolocation technique: tracing the coastline in Google Earth to match natural landforms. When working with an island or similarly contained area, this process is relatively simple, as coastal rock formations tend to remain consistent over time.
 
 {% include gallery-figure.html img="geo_02.jpg" width="100%" alt="A Google Earth rendering and an archival photo showing the same geological features side by side." caption="Google Earth rendering of geological features beside one of the archival photos on Karluk, ca. 1938. Photograph by Salvador Caballero, courtesy of FANHS." %}
 

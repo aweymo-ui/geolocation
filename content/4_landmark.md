@@ -4,15 +4,15 @@ nav: Landmark Identification
 gallery: true
 ---
 
-**If these last two methods were unsuccessful** you may want to use a resource named [Overpass Turbo](https://overpass-turbo.eu/). The platform centers around tagged landmarks in a geographic area. Landmarks can include natural features (like mountains or rivers), historical sites, monuments, buildings, types of businesses and other structures that are differentiated by cultural, historical, or aesthetic purposes. Overpass Turbo is designed to create and run queries on [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page), a collaborative, volunteer generated geographic database that has been tagging these types of landmarks for over 20 years. 
+**If these last two methods were unsuccessful** you may want to use a resource named [Overpass Turbo](https://overpass-turbo.eu/){:target="_blank" rel="noopener"}. The platform centers around tagged landmarks in a geographic area. Landmarks can include natural features (like mountains or rivers), historical sites, monuments, buildings, types of businesses and other structures that are differentiated by cultural, historical, or aesthetic purposes. Overpass Turbo is designed to create and run queries on [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Main_Page){:target="_blank" rel="noopener"}, a collaborative, volunteer generated geographic database that has been tagging these types of landmarks for over 20 years. 
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
 </div>
 
-In addition to volunteer tagging, the database also pulls from infrastructural public datasets and aerial imagery. Overpass Turbo runs on the [Overpass API query language](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide) to search for an [extremely wide array of different built and natural environmental features](https://wiki.openstreetmap.org/wiki/Map_features). 
+In addition to volunteer tagging, the database also pulls from infrastructural public datasets and aerial imagery. Overpass Turbo runs on the [Overpass API query language](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide){:target="_blank" rel="noopener"} to search for an [extremely wide array of different built and natural environmental features](https://wiki.openstreetmap.org/wiki/Map_features){:target="_blank" rel="noopener"}. 
 
-For example, here is a map I created of all of the landmarks identified of fast food “amenities” here in Moscow. [Click here to explore.](https://overpass-turbo.eu/map.html?Q=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3B%0A%2F%2F+define+the+area+for+Moscow%2C+ID%0Aarea%5Bname%3D%22Moscow%22%5D-%3E.searchArea%3B%0A%2F%2F+search+for+all+nodes%2C+ways%2C+and+relations+with+amenity%3Dfast_food+within+the+area%0A%28%0A++node%5B%22amenity%22%3D%22fast_food%22%5D%28area.searchArea%29%3B%0A++way%5B%22amenity%22%3D%22fast_food%22%5D%28area.searchArea%29%3B%0A++relation%5B%22amenity%22%3D%22fast_food%22%5D%28area.searchArea%29%3B%0A%29%3B%0A%2F%2F+output+results%0Aout+body%3B%0A%3E%3B%0Aout+skel+qt%3B%0A) (It may take a moment to load.)
+For example, here is a map I created of all of the landmarks identified of fast food “amenities” here in Moscow. [Click here to explore.](https://overpass-turbo.eu/map.html?Q=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3B%0A%2F%2F+define+the+area+for+Moscow%2C+ID%0Aarea%5Bname%3D%22Moscow%22%5D-%3E.searchArea%3B%0A%2F%2F+search+for+all+nodes%2C+ways%2C+and+relations+with+amenity%3Dfast_food+within+the+area%0A%28%0A++node%5B%22amenity%22%3D%22fast_food%22%5D%28area.searchArea%29%3B%0A++way%5B%22amenity%22%3D%22fast_food%22%5D%28area.searchArea%29%3B%0A++relation%5B%22amenity%22%3D%22fast_food%22%5D%28area.searchArea%29%3B%0A%29%3B%0A%2F%2F+output+results%0Aout+body%3B%0A%3E%3B%0Aout+skel+qt%3B%0A){:target="_blank" rel="noopener"} (It may take a moment to load.)
 
 {% include gallery-figure.html img="geo_30.jpg" width="100%" alt="Map of Moscow with a coding area to the left and various nodes mostly along the major roads" caption="Overpass Turbo map of Moscow Fast Food locations" %}
 
@@ -46,9 +46,9 @@ While we find that there is a water tower located within an area that would like
 
 {% include gallery-figure.html img="geo_34.jpg" width="100%" alt="Street scene with a bank, stone monument, street lights and mountain in the background highlighted for reference" caption="First National Bank with Mullan Monument, n.d. Courtesy U of I Special Collections." %}
 
-In contrast, this photograph would be an example of an image that is ideal for triangulation (setting aside the fact that we actually know this is located in [Mullan, Idaho](https://www.lib.uidaho.edu/digital/tabor/items/tabor1552.html)). We have a monument in the road, a series of street lamps, a structure that resembles a 19th century bank and a landform in the background with a fairly distinct shape. 
+In contrast, this photograph would be an example of an image that is ideal for triangulation (setting aside the fact that we actually know this is located in [Mullan, Idaho](https://www.lib.uidaho.edu/digital/tabor/items/tabor1552.html){:target="_blank" rel="noopener"}). We have a monument in the road, a series of street lamps, a structure that resembles a 19th century bank and a landform in the background with a fairly distinct shape. 
 
-Using the [OpenStreetMap language](https://wiki.openstreetmap.org/wiki/Map_features) again, we can search for these elements within the state of Idaho:
+Using the [OpenStreetMap language](https://wiki.openstreetmap.org/wiki/Map_features){:target="_blank" rel="noopener"} again, we can search for these elements within the state of Idaho:
 
 ```
 [out:json][timeout:25];
