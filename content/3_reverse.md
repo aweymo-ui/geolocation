@@ -4,13 +4,16 @@ nav: Reverse Image Searching
 gallery: true
 ---
 
-**Like Google Earth satellite imaging**, the basic functionality of reverse image searching has been in development for many years but relatively recent innovations have made it more accurate than ever. The way that it works is an algorithm is developed to analyze the content of an image and reduce it down to a unique digital signature or “fingerprint.” Then the algorithm looks for similar fingerprints across the rest of that platform’s database. The first publicly available reverse image search engine named Tineye was launched in 2008, followed by Russia based platform Yandex, then Google and Bing.
+**Similar to Google Earth's satellite imaging, reverse image searching has been under development for many years**, but recent innovations have significantly improved its accuracy. This technology works by using an algorithm to analyze an image's content and create a unique digital signature, or "fingerprint." The algorithm then searches for similar fingerprints within the platform's database. The first publicly available reverse image search engine, TinEye, was launched in 2008, followed by Russia-based Yandex, and then Google and Bing.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
 </div>
 
-**For an exact image match*, for instance when verifying copyright of an image without metadata, I recommend using [TinEye](https://tineye.com/). When you need to identify an area that may be taken from a slightly different angle, lighting or proximity, as is almost always the case with geolocation, I would recommend using [Google Lens](https://lens.google/) or [Bing Visual Search](https://www4.bing.com/visualsearch). These algorithms excel because they are able to detect particular digital signatures that align with your image from an otherwise contrasting image, such as one distinctive structure or the  particular shape of a skyline. While [Yandex](https://yandex.com/images/) is [by some accounts the most accurate of all of these tools for geolocation](https://www.bellingcat.com/resources/2022/08/09/using-new-tech-to-investigate-old-photographs/), I’ve found that search results skew heavily towards locations in Russia and Europe.
+- **For an exact image match**, such as when verifying the copyright of an image without metadata, I recommend using [TinEye](https://tineye.com/)
+- **When you need to identify an area that may be taken from a slightly different angle, lighting or proximity,** I recommend using [Google Lens](https://lens.google/) or [Bing Visual Search](https://www4.bing.com/visualsearch)
+    - These algorithms excel because they are able to detect particular digital signatures that align with your image from an otherwise contrasting image, such as one distinctive structure or the  particular shape of a skyline
+- While [Yandex](https://yandex.com/images/) is [by some accounts the most accurate of all of these tools for geolocation](https://www.bellingcat.com/resources/2022/08/09/using-new-tech-to-investigate-old-photographs/), I’ve found that search results skew heavily towards locations in Russia and Europe
 
 {% include card.html text="Here are some examples of the types of things reverse image searching excels at and some of the things it struggles with:" %}
 
@@ -44,16 +47,16 @@ There were hundreds of unrelated National Geographic results that were generated
 
 {% include gallery-figure.html img="geo_27.jpg" width="75%" alt="A craftsman style house on a street corner with a woman sitting on the steps" caption="Photograph PG070-16-03 from Unidentified Family Album, 1920-1939, Courtesy U of I Special Collections." %}
 
-These types of houses were literally sold in catalogs, making these digital fingerprints too pervasive to identify with reverse image searching.
+These types of houses were literally sold in catalogs, making these digital fingerprints too universal to identify with reverse image searching.
 
 * Sparsely populated areas
 
 {% include gallery-figure.html img="geo_28.jpg" width="75%" alt="An agricultural landscape with two houses and orchard trees present" caption="Photograph PG070-23-01 from Unidentified Family Album, 1920-1939, Courtesy U of I Special Collections." %}
 
-The lack of distinctive digital signatures, and the higher likelihood that the area has never been photographed and would not be within the reverse image searching platform’s database makes the success rate on these types of images much lower.
+The lack of distinctive digital signatures, and the higher likelihood that the area has possibly never been photographed before and the success rate of reverse image searching much lower.
 
 * Pervasive industrial structures
 
 {% include gallery-figure.html img="geo_29.jpg" width="75%" alt="A long agricultural packaging structure with a grain elevator in the background" caption="Photograph PG070-23-01 from Unidentified Family Album, 1920-1939, Courtesy U of I Special Collections." %}
 
-Similar to residential architecture, these reverse imaging tools also have difficulty commonplace industrial structures, which often lack unique fingerprints in contrast and are so large they often obscure helpful context in the skyline.
+Like residential architecture, reverse image search tools struggle with common industrial structures, which often lack distinctive digital fingerprints and are often so large that they can obscure valuable context in the skyline.

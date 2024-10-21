@@ -4,7 +4,7 @@ nav: Aerial Timelapse
 gallery: true
 ---
 
-**Another challenge you may encounter** in geolocation is identifying photographs that contain structures that have since been demolished. Creating a time lapse of historical aerial photography can help you better understand when and where larger features such bridges, buildings and natural areas were still standing. 
+**Another challenge in geolocation** is identifying photographs of structures that have since been demolished. Creating a time-lapse using historical aerial photography can help you understand when and where significant features, such as bridges, buildings, and natural areas, were still standing.
 
 {% include feature/nav-menu.html sections="Platform Comparison;Google Earth Engine;Output Comparison" %}
 
